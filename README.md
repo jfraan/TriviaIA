@@ -14,3 +14,6 @@ https://replit.com/@JofranTito/TriviaIA
 
 ## Contribucion
 Todo pull request e Issues es bienvenido para solucionar o mejorar la experiencia de uso de esta Trivia.
+
+##Github
+https://github.com/jfraan/TriviaIA
