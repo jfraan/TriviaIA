@@ -48,7 +48,7 @@ while iniciar_trivia == True:
         "c) En 1997, después de una computadora autónoma (Deep Blue) ganase al campeón mundial de ajedrez Gari Kaspárov"
     )
     print("d) En 1971, cuando Ray Tomlinson envío el primer email.")
-    respuesta_1 = input("\nTu respuesta: ")
+    respuesta_1 = input("\nTu respuesta: ").lower()
 
     while respuesta_1 not in ("a", "b", "c", "d"):
         respuesta_1 = input(
@@ -78,7 +78,7 @@ while iniciar_trivia == True:
     print("d) Ninguna de las anteriores")
 
     # Almacenamos la respuesta"
-    respuesta_2 = input("\nTu respuesta: ")
+    respuesta_2 = input("\nTu respuesta: ").lower()
 
     while respuesta_2 not in ("a", "b", "c", "d"):
         respuesta_2 = input(
@@ -109,7 +109,7 @@ while iniciar_trivia == True:
     print("d) Damas")
 
     
-    respuesta_3 = input("\nTu respuesta: ")
+    respuesta_3 = input("\nTu respuesta: ").lower()
 
     while respuesta_3 not in ("a", "b", "c", "d"):
         respuesta_3 = input(
@@ -136,7 +136,7 @@ while iniciar_trivia == True:
         "c) Con un programa informático, una máquina no piensa. Simplemente, hace exactamente lo que le dicen."
     )
     print("d) Todas son correctas")
-    respuesta_4 = input("\nTu respuesta: ")
+    respuesta_4 = input("\nTu respuesta: ").lower()
 
     while respuesta_4 not in ("a", "b", "c", "d"):
         respuesta_4 = input(
@@ -161,7 +161,7 @@ while iniciar_trivia == True:
     print("b) Robots")
     print("c) Redes neuronales artificiales")
     print("d) Sistemas expertos")
-    respuesta_5 = input("\nTu respuesta: ")
+    respuesta_5 = input("\nTu respuesta: ").lower()
 
     while respuesta_5 not in ("a", "b", "c", "d"):
         respuesta_5 = input(
@@ -174,9 +174,15 @@ while iniciar_trivia == True:
     else:
         print(RED+"\nIncorrecto", nombre, "!"+RESET)
     print(MAGENTA+"\nGracias", nombre, "por jugar mi trivia, alcanzaste", puntaje,
-          "puntos"+RESET)
-
-    print(BLUE+"\n¿Deseas intentar la trivia nuevamente?")
+          "puntos sobre 20"+RESET)
+    if puntaje >20:
+      print(CYAN+"Sacaste mas de 20 eres un GENIO!"+RESET)
+    elif puntaje > 10:
+      print(CYAN+"Sigue asi lo hiciste muy bien!"+RESET)
+    else:
+      print(CYAN+"No te rindas! Puedes mejorar :)"+RESET)
+      
+    print(GREEN+"\n¿Deseas intentar la trivia nuevamente?")
     repetir_trivia = input(
         "Ingresa 'si' para repetir, o cualquier tecla para finalizar: ").lower(
         )
