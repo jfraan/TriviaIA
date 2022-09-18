@@ -40,7 +40,7 @@ while iniciar_trivia == True:
     print(MAGENTA+"\nEmpezando la trivia...\n"+RESET)
     time.sleep(1)
     print(
-        YELLOW+"1) ¿Cuándo se estableció formalmente el término ‘Inteligencia Artificial?\n"
+        YELLOW+"1) ¿Cuándo se estableció formalmente el término ‘Inteligencia Artificial?\n"+RESET
     )
     print("a) En 1968, con la película ‘2001: Una odisea en el Espacio’")
     print("b) En 1956, durante la Conferencia de Dartmouth")
@@ -57,15 +57,15 @@ while iniciar_trivia == True:
 # Verificacion de respuesta
     if respuesta_1 == "b":
         puntaje += 4
-        print("\nMuy bien", nombre, "!")
+        print(BLUE+"\nMuy bien", nombre, "!"+RESET)
     else:
-        print("\nIncorrecto", nombre, "!")
+        print(RED+"\nIncorrecto", nombre, "!"+RESET)
 
     print(nombre, "llevas", puntaje, "puntos")
 
     # Pregunta 2
 
-    print("\n2) ¿Cuál es la diferencia entre IA débil e IA fuerte?\n")
+    print(YELLOW+"\n2) ¿Cuál es la diferencia entre IA débil e IA fuerte?\n"+RESET)
     print(
         "a) La débil está creada para realizar una tarea concreta. La fuerte es capaz de imitar el procesamiento de la información propio de los seres humanos"
     )
@@ -87,21 +87,21 @@ while iniciar_trivia == True:
 
 # Verificacion de respuesta
     if respuesta_2 == "b":
-        print("\nIncorrecto!", nombre, "!")
+        print(RED+"\nIncorrecto!", nombre, "!"+RESET)
     elif respuesta_2 == "c":
-        print("\nIncorrecto!", nombre, "!")
+        print(RED+"\nIncorrecto!", nombre, "!"+RESET)
     elif respuesta_2 == "d":
-        print("\nIncorrecto!", nombre, "!")
+        print(RED+"\nIncorrecto!", nombre, "!"+RESET)
     else:
         puntaje += 4
-        print("\nMuy bien", nombre, "!")
+        print(BLUE+"\nMuy bien", nombre, "!"+RESET)
 
     print(nombre, "llevas", puntaje, "puntos")
 
     # Pregunta 3
 
-    print(
-        "\n3) ¿Qué juego de mesa ha tenido un papel muy importante en el desarrollo de la IA?\n"
+    print(YELLOW+
+        "\n3) ¿Qué juego de mesa ha tenido un papel muy importante en el desarrollo de la IA?\n"+RESET
     )
     print("a) Dominó")
     print("b) Ajedrez")
@@ -117,15 +117,15 @@ while iniciar_trivia == True:
 
     if respuesta_3 == "b":
         puntaje += 4
-        print("\nMuy bien", nombre, "!")
+        print(BLUE+"\nMuy bien", nombre, "!"+RESET)
     else:
-        print("\nIncorrecto", nombre, "!")
+        print(RED+"\nIncorrecto", nombre, "!"+RESET)
 
     print(nombre, "llevas", puntaje, "puntos")
 
     # Pregunta 4
 
-    print("\n4) ¿En qué se diferencia un programa informático de una IA?\n")
+    print(YELLOW+"\n4) ¿En qué se diferencia un programa informático de una IA?\n"+RESET)
     print(
         "a) Un programa informático es solo una lista de órdenes que le dice al ordenador lo que tiene que hacer."
     )
@@ -145,17 +145,17 @@ while iniciar_trivia == True:
 
     if respuesta_4 == "d":
         puntaje += 4
-        print("\nMuy bien", nombre, "!")
+        print(BLUE+"\nMuy bien", nombre, "!"+RESET)
     else:
-        print("\nIncorrecto", nombre, "!")
+        print(RED+"\nIncorrecto", nombre, "!"+RESET)
 
     print(nombre, "llevas", puntaje, "puntos")
 
     # Pregunta 5 comodin
 
-    print("Pregunta Comodin :)")
-    print(
-        "\n5) Sistemas que piensan como humanos: automatizan actividades como la toma de decisiones, la resolución de problemas y el aprendizaje\n"
+    print(GREEN+"\nPregunta Comodin :)"+RESET)
+    print(YELLOW+
+        "\n5) Sistemas que piensan como humanos: automatizan actividades como la toma de decisiones, la resolución de problemas y el aprendizaje\n"+RESET
     )
     print("a) Agentes inteligentes")
     print("b) Robots")
@@ -170,10 +170,10 @@ while iniciar_trivia == True:
 # Verificamos su respuesta para mandar un mensaje de acierto con multilplicador usando random o de error
     if respuesta_5 == "c":
         puntaje += 2 * comodin
-        print("\nMuy bien", nombre, "!")
+        print(BLUE+"\nMuy bien", nombre, "!"+RESET)
     else:
-        print("\nIncorrecto", nombre, "!")
-    print("\nGracias", nombre, "por jugar mi trivia, alcanzaste", puntaje,
+        print(RED+"\nIncorrecto", nombre, "!"+RESET)
+    print(MAGENTA+"\nGracias", nombre, "por jugar mi trivia, alcanzaste", puntaje,
           "puntos"+RESET)
 
     print(BLUE+"\n¿Deseas intentar la trivia nuevamente?")
